@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet Rose</title>
+  <style>
+    body { margin: 0; }
+    img { width: 100%; height: auto; display: block; }
 
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  height: 100%;
-  overscroll-behavior: none;
-}
+    /* Desktop image hidden by default */
+    .desktop { display: none; }
 
-.container {
-  background-color: black;
-  min-height: 100vh;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-.desktop { display: none; }
-
-@media (min-width: 768px) {
-  .mobile { display: none; }
-  .desktop { display: block; }
-}
-</style>
+    /* On screens 768px and wider, show desktop image */
+    @media (min-width: 768px) {
+      .mobile { display: none; }
+      .desktop { display: block; }
+    }
+  </style>
 </head>
-
 <body>
-  <div class="container">
-    <img class="mobile" src="ccomments 18:01:2026.png">
-    <img class="desktop" src="Coming soon desktop.png">
-  </div>
+  <!-- Mobile -->
+  <img class="mobile" src="comments 18:01:2026.png" alt="Coming soon (mobile)">
+
+  <!-- Desktop -->
+  <img class="desktop" src="Coming soon desktop.png" alt="Coming soon (desktop)">
 </body>
 </html>
